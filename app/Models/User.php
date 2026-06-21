@@ -10,11 +10,14 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
+use App\Models\Booking;
+use App\Models\Review;
 
 #[Fillable(['name', 'email', 'password'])]
 #[Hidden(['password', 'remember_token'])]
 class User extends Authenticatable implements JWTSubject
 {
+
     public function getJWTIdentifier()
     {
         return $this->getKey();
@@ -38,4 +41,13 @@ class User extends Authenticatable implements JWTSubject
             'password' => 'hashed',
         ];
     }
+    public function bookings()
+{
+    return $this->hasMany(Booking::class);
+}
+
+public function reviews()
+{
+    return $this->hasMany(Review::class);
+}
 }
