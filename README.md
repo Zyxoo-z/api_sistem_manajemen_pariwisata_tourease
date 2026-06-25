@@ -98,11 +98,11 @@ http://127.0.0.1:8000
 
 Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 
-| Name | Email | Password |
-|------|-------|----------|
-| Admin | hannan@gmail.com | hannan123 |
-| Admin | riski@gmail.com | Rizky123 |
-| Admin | abin@gmail.com | abin123 |
+| Email                   |  Password   |
+|-------------------------|-------------|
+| hannan@gmail.com        | hannan123   |
+| Admin | riski@gmail.com | Rizky123    |
+| Admin | abin@gmail.com  | abin123     |
 
 > **Cara login:** Kirim request `POST /api/login` dengan email dan password di atas, lalu gunakan token yang didapat sebagai `Bearer Token` di header Authorization untuk mengakses endpoint lainnya.
 
