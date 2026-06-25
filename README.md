@@ -128,7 +128,7 @@ Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 | POST   | /api/destinasi            | Tambah destinasi            |
 | PUT    | /api/destinasi/{id}       | Update destinasi            |
 | DELETE | /api/destinasi/{id}       | Hapus destinasi             |
-| GET    | /api/destinasi/{id}/paket | Paket berdasarkan destinasi |
+
 
 ---
 
@@ -141,7 +141,7 @@ Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 | POST   | /api/paket              | Tambah paket              |
 | PUT    | /api/paket/{id}         | Update paket              |
 | DELETE | /api/paket/{id}         | Hapus paket               |
-| GET    | /api/paket/{id}/booking | Booking berdasarkan paket |
+
 
 ---
 
@@ -154,10 +154,7 @@ Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 | POST   | /api/booking                | Membuat booking             |
 | PUT    | /api/booking/{id}           | Update booking              |
 | DELETE | /api/booking/{id}           | Hapus booking               |
-| GET    | /api/booking/user/{user_id} | Booking berdasarkan user    |
-| GET    | /api/my-booking             | Booking user yang login     |
-| GET    | /api/booking/{id}/payment   | Payment berdasarkan booking |
-| GET    | /api/booking/{id}/review    | Review berdasarkan booking  |
+
 
 ---
 
@@ -170,7 +167,7 @@ Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 | POST   | /api/payment                      | Tambah pembayaran              |
 | PUT    | /api/payment/{id}                 | Update pembayaran              |
 | DELETE | /api/payment/{id}                 | Hapus pembayaran               |
-| GET    | /api/payment/booking/{booking_id} | Pembayaran berdasarkan booking |
+
 
 ---
 
@@ -183,8 +180,7 @@ Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 | POST   | /api/review                      | Tambah review              |
 | PUT    | /api/review/{id}                 | Update review              |
 | DELETE | /api/review/{id}                 | Hapus review               |
-| GET    | /api/review/user/{user_id}       | Review berdasarkan user    |
-| GET    | /api/review/booking/{booking_id} | Review berdasarkan booking |
+
 
 ---
 
@@ -192,7 +188,7 @@ Setelah menjalankan seeder, akun berikut sudah tersedia dan siap digunakan:
 
 Dokumentasi lengkap endpoint tersedia secara online melalui tautan berikut:
 
-🔗 **[Lihat Dokumentasi API](https://documenter.getpostman.com/view/43068266/2sBXwqrAPD)**
+🔗 **[Lihat Dokumentasi API](https://documenter.getpostman.com/view/43095127/2sBXwwonvL)**
 
 Dokumentasi mencakup detail endpoint, method, parameter, contoh request, dan contoh response untuk seluruh fitur sistem.
 
@@ -213,11 +209,11 @@ Dokumentasi mencakup detail endpoint, method, parameter, contoh request, dan con
 ## 👨‍💻 Tim Pengembang
 
 
-| Nama                             | NIM                              | Tugas                                                                         |
-| -------------------------------- | -------------------------------- | ----------------------------------------------------------------------------- |
-| Muhammad Abin                    | 2301040038                       | End Point Payment & Review, Read me                                           |
-| Muhammad Anshori Hannan          | 2301040034                       | Pembuatan token JWT, Pembuatan Endpoint Destinasi & Paket                     |
-| Rizky Dewa Cahya Saputra         | 2301040014                       | Initial Commit, End Point Booking, Db Seeder, Dokumentasi postman             |
+| Nama                             | NIM                              | Tugas                                                                               |
+| -------------------------------- | -------------------------------- | -----------------------------------------------------------------------------       |
+| Muhammad Abin                    | 2301040038                       | End Point Payment & Review, Read me                                                 |
+| Muhammad Anshori Hannan          | 2301040034                       | Pembuatan token JWT, Pembuatan Login & Logout, Pembuatan Endpoint Destinasi & Paket |
+| Rizky Dewa Cahya Saputra         | 2301040014                       | Pembuatan Repository, End Point Booking, Pembuatan Alur DB, Dokumentasi postman     |
 
 
 ---
